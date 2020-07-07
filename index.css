@@ -123,6 +123,9 @@
     .white-text-anthony-h3{
         font-size: 12px
     }
+    #main .carousel-inner img{
+        max-height: 150vh;
+    }
 }
 
 
