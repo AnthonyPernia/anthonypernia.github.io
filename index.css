@@ -8,9 +8,6 @@
     color: white;
 }
 
-#header .white-text-anthony{
-    color: white !important;
-}
 #main .rrss{
     width: 50px;
 }
@@ -59,6 +56,73 @@
     background-color: #24292e;
     color: white;
 }
-#header .white-text-anthony{
-    font-size:1.2vw;
+#header .white-text-anthony-h2{
+    color: white !important;
 }
+
+
+@media screen and (min-width: 1000px) {
+    #main .white-text-anthony-h1{
+      font-size: 35px;
+    }
+    #main .white-text-anthony-h2{
+        font-size: 18px;
+    }
+    #header .white-text-anthony-h2{
+        font-size: 25px
+    }
+    #main .rrss{
+        width: 50px;
+    }
+    #about-section .white-text-anthony-h2{
+        font-size: 24px
+    }
+    .white-text-anthony-h3{
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main .white-text-anthony-h1{
+      font-size: 28px;
+    }
+    #main .white-text-anthony-h2{
+        font-size: 14px;
+    }
+    #header .white-text-anthony-h2{
+        font-size: 22px
+    }
+    #main .rrss{
+        width: 40px;
+    }
+    #about-section .white-text-anthony-h2{
+        font-size: 20px
+    }
+    .white-text-anthony-h3{
+        font-size: 14px
+    }
+}
+  
+  /* pequeña */
+@media screen and (max-width: 650px) {
+    #main .white-text-anthony-h1 {
+      font-size: 22px;
+    }
+    #main .white-text-anthony-h2{
+        font-size: 12px;
+    }
+    #header .white-text-anthony-h2{
+        font-size: 14px
+    }
+    #main .rrss{
+        width: 30px;
+    }
+    #about-section .white-text-anthony-h2{
+        font-size: 13px
+    }
+    .white-text-anthony-h3{
+        font-size: 12px
+    }
+}
+
+
