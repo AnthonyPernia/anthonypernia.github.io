@@ -1,0 +1,61 @@
+
+
+.navbar{
+    background-color: #24292e !important;
+}
+
+#footer a{
+    color: white;
+}
+
+#header .white-text-anthony{
+    color: white !important;
+}
+#main .rrss{
+    width: 50px;
+}
+#contact .rrss{
+    width: 40px;
+}
+
+#contact .white-text-anthony{
+    color:white;
+
+}
+.text-cv{
+    color: #97c93e !important;
+}
+
+#main .carousel-inner img{
+    max-height: 90vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+#contact{
+    background-color: #24292e ;
+    color: white ;
+}
+
+#about-section{
+    background-color: #24292e;
+    color: white;
+}
