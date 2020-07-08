@@ -163,6 +163,9 @@
     #contact .white-text-anthony-h2{
         font-size: 20px
     }
+    .boton-linkedin{
+        display: none;
+    }
 }
 
 
