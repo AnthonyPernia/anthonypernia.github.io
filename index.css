@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 1000px) {
     #main .white-text-anthony-h1{
-      font-size: 35px;
+      font-size: 38px;
     }
     #main .white-text-anthony-h2{
         font-size: 18px;
@@ -74,17 +74,30 @@
     #main .rrss{
         width: 50px;
     }
+    #contact .rrss{
+        width: 40px;
+    }
     #about-section .white-text-anthony-h2{
-        font-size: 24px
+        font-size: 25px
     }
     .white-text-anthony-h3{
         font-size: 16px
     }
+    #projects .black-text-anthony-h1{
+        font-size: 32px
+    }
+    #projects .black-text-anthony-h2{
+        font-size: 25px
+    }
+    #contact .white-text-anthony-h2{
+        font-size: 25px
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
     #main .white-text-anthony-h1{
-      font-size: 28px;
+      font-size: 30px;
     }
     #main .white-text-anthony-h2{
         font-size: 14px;
@@ -95,18 +108,30 @@
     #main .rrss{
         width: 40px;
     }
+    #contact .rrss{
+        width: 30px;
+    }
     #about-section .white-text-anthony-h2{
-        font-size: 20px
+        font-size: 22px
     }
     .white-text-anthony-h3{
         font-size: 14px
+    }
+    #projects .black-text-anthony-h1{
+        font-size: 25px
+    }
+    #projects .black-text-anthony-h2{
+        font-size: 25px
+    }
+    #contact .white-text-anthony-h2{
+        font-size: 20px
     }
 }
   
   /* pequeña */
 @media screen and (max-width: 650px) {
     #main .white-text-anthony-h1 {
-      font-size: 22px;
+      font-size: 24px;
     }
     #main .white-text-anthony-h2{
         font-size: 12px;
@@ -117,14 +142,26 @@
     #main .rrss{
         width: 30px;
     }
+    #contact .rrss{
+        width: 25px;
+    }
     #about-section .white-text-anthony-h2{
-        font-size: 13px
+        font-size: 14px
     }
     .white-text-anthony-h3{
-        font-size: 12px
+        font-size: 12px;
     }
-    #main .carousel-inner img{
-        max-height: 150vh;
+    #projects .black-text-anthony-h1{
+        font-size: 18px
+    }
+    #projects .black-text-anthony-h2{
+        font-size: 15px
+    }
+    .card-projects{
+        width: 220px
+    }
+    #contact .white-text-anthony-h2{
+        font-size: 20px
     }
 }
 
