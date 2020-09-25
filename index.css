@@ -61,24 +61,32 @@
 }
 
 
-@media screen and (min-width: 1000px) {
+
     #main .white-text-anthony-h1{
-      font-size: 38px;
+        font-size: calc(1.5em + 1vw);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
     #main .white-text-anthony-h2{
-        font-size: 18px;
+        font-size: calc(0.5em + 0.5vw);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
     #header .white-text-anthony-h2{
-        font-size: 25px
+        font-size: calc(0.5em + 1vw);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
     #main .rrss{
-        width: 50px;
+        width: calc(1em + 0.5vw);
     }
     #contact .rrss{
         width: 40px;
     }
     #about-section .white-text-anthony-h2{
-        font-size: 25px
+        font-size: calc(1em + 0.5vw);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    #about-section .white-text-anthony-h3{
+        font-size: calc(0.5em + 0.5vw);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
     .white-text-anthony-h3{
         font-size: 16px
@@ -93,79 +101,5 @@
         font-size: 25px
     }
     
-}
-
-@media screen and (max-width: 1000px) {
-    #main .white-text-anthony-h1{
-      font-size: 30px;
-    }
-    #main .white-text-anthony-h2{
-        font-size: 14px;
-    }
-    #header .white-text-anthony-h2{
-        font-size: 22px
-    }
-    #main .rrss{
-        width: 40px;
-    }
-    #contact .rrss{
-        width: 30px;
-    }
-    #about-section .white-text-anthony-h2{
-        font-size: 22px
-    }
-    .white-text-anthony-h3{
-        font-size: 14px
-    }
-    #projects .black-text-anthony-h1{
-        font-size: 25px
-    }
-    #projects .black-text-anthony-h2{
-        font-size: 25px
-    }
-    #contact .white-text-anthony-h2{
-        font-size: 20px
-    }
-}
-  
-  /* pequeña */
-@media screen and (max-width: 650px) {
-    #main .white-text-anthony-h1 {
-      font-size: 24px;
-    }
-    #main .white-text-anthony-h2{
-        font-size: 12px;
-    }
-    #header .white-text-anthony-h2{
-        font-size: 14px
-    }
-    #main .rrss{
-        width: 30px;
-    }
-    #contact .rrss{
-        width: 25px;
-    }
-    #about-section .white-text-anthony-h2{
-        font-size: 14px
-    }
-    .white-text-anthony-h3{
-        font-size: 12px;
-    }
-    #projects .black-text-anthony-h1{
-        font-size: 18px
-    }
-    #projects .black-text-anthony-h2{
-        font-size: 15px
-    }
-    .card-projects{
-        width: 200px
-    }
-    #contact .white-text-anthony-h2{
-        font-size: 20px
-    }
-    .boton-linkedin{
-        display: none;
-    }
-}
 
 
