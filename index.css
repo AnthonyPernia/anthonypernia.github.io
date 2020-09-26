@@ -62,44 +62,64 @@
 
 
 
-    #main .white-text-anthony-h1{
-        font-size: calc(1.5em + 1vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #main .white-text-anthony-h2{
-        font-size: calc(0.5em + 0.5vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #header .white-text-anthony-h2{
-        font-size: calc(0.5em + 1vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #main .rrss{
-        width: calc(1em + 0.5vw);
-    }
-    #contact .rrss{
-        width: 40px;
-    }
-    #about-section .white-text-anthony-h2{
-        font-size: calc(1em + 0.5vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
+#main .white-text-anthony-h1{
+    font-size: calc(1.5em + 1vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#main .white-text-anthony-h2{
+    font-size: calc(0.5em + 0.5vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#header .white-text-anthony-h2{
+    font-size: calc(0.5em + 1vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#main .rrss{
+    width: calc(1em + 0.5vw);
+}
+#contact .rrss{
+    width: 40px;
+}
+#about-section .white-text-anthony-h2{
+    font-size: calc(1em + 0.5vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.white-text-anthony-h3{
+    font-size: calc(0.5em + 0.5vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#projects .black-text-anthony-h1{
+    font-size: calc(1em + 1vw);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#projects .black-text-anthony-h2{
+font-size: calc(1em + 0.5vw);
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#contact .white-text-anthony-h2{
+    font-size: 25px
+}
 
-    .white-text-anthony-h3{
-        font-size: calc(0.5em + 0.5vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #projects .black-text-anthony-h1{
-        font-size: calc(1em + 1vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #projects .black-text-anthony-h2{
-        font-size: calc(1em + 0.5vw);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    #contact .white-text-anthony-h2{
-        font-size: 25px
-    }
-    
+#module {
+    width: 500px;
+  }
+  
+  #module p.collapse[aria-expanded="false"] {
+      display: block;
+      height: 40px !important;
+      overflow: hidden;
+  }
+  
+  #module p.collapsing[aria-expanded="false"] {
+      height: 40px !important;
+  }
+  
+  #module a.collapsed:after  {
+      content: '+ Show More';
+  }
+  
+  #module a:not(.collapsed):after {
+      content: '- Show Less';
+  }
 
 
