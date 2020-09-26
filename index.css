@@ -8,12 +8,6 @@
     color: white;
 }
 
-#main .rrss{
-    width: 50px;
-}
-#contact .rrss{
-    width: 40px;
-}
 
 #contact .white-text-anthony{
     color:white;
@@ -74,12 +68,10 @@
     font-size: calc(0.5em + 1vw);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-#main .rrss{
+.rrss{
     width: calc(1em + 0.5vw);
 }
-#contact .rrss{
-    width: 40px;
-}
+
 #about-section .white-text-anthony-h2{
     font-size: calc(1em + 0.5vw);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
