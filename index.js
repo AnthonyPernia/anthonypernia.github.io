@@ -1,13 +1,11 @@
 
 
-var elements_title = document.getElementsByClassName("card-repo-title");
-var elements_desc = document.getElementsByClassName("card-repo-desc");
+var elements_div = document.getElementsByClassName("card-repo");
 
 
-
-function get_data(){
-    var title = document.getElementById('title_repo');
-    var description = document.getElementById('desc_repo');
+function get_data(element){
+    var title = element.getElementsByTagName("h1").item(0);
+    var description = element.getElementsByTagName("h2").item(0);
     var Http = new XMLHttpRequest();
     var name = title.getAttribute('repo');
     var url='https://api.github.com/repos/anthonyperniah/'+name;
@@ -24,15 +22,12 @@ function get_data(){
 };
 
 
-function set_data(){
-    var elements_title = document.getElementsByClassName("card-repo-title");
-    var elements_desc = document.getElementsByClassName("card-repo-desc");
-    for (e in elements_title){
-        console.log(e.outerHTML)
-        console.log('e')
+function set_data(elements_div){
+    for (var e=0; e < elements_div.length;e++){
+        get_data(elements_div[e])
     }
 }
 
 
-console.log('llama a javascript si ')
-document.addEventListener("DOMContentLoaded", set_data());
+
+document.addEventListener("DOMContentLoaded", set_data(elements_div));

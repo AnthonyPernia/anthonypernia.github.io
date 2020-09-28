@@ -82,11 +82,11 @@
 }
 #projects .black-text-anthony-h1{
     font-weight: bold;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.5em + 0.5vw);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 #projects .black-text-anthony-h2{
-    font-size: calc(0.5em + 0.5vw);
+    font-size: calc(0.4em + 0.4vw);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 #contact .white-text-anthony-h2{
