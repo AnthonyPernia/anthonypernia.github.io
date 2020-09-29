@@ -32,9 +32,8 @@ function set_data(elements_div) {
 
 document.addEventListener("DOMContentLoaded", set_data(elements_div));
 
-function create_element_init() {
+function create_element_init(parent) {
     //Elements init
-    var parent = document.getElementById("projects2");
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
     //Class
@@ -49,7 +48,7 @@ function create_element_init() {
 
 
 
-function create_card(div2,result) {
+function create_card(parent, div2, result) {
     var div_card = document.createElement("div");
     var img = document.createElement("img");
     var a = document.createElement("a");
@@ -66,7 +65,6 @@ function create_card(div2,result) {
     description.className = " black-text-anthony-h3";
     button.className = "center btn btn-outline-dark";
     //atts
-    img.src = "assets/images/portfolio.png";
     a.target = '_blank';
     title.id = 'title_repo';
     title.repo = 'anthonyperniah.github.io';
@@ -81,30 +79,30 @@ function create_card(div2,result) {
     a.appendChild(title);
     div_card_body.appendChild(description);
     div_card_body.appendChild(button);
-    title.innerHTML='fsgsgsgsg'
     //set data
-    title.innerHTML=result.name;
-    button.href = result.html_url;
-    description.innerHTML=result.description;
 
+    img.src = "https://raw.githubusercontent.com/AnthonyPerniaH/" + result.name + "/master/img_preview/preview.png";
+    title.innerHTML = result.name;
+    button.href = result.html_url;
+    description.innerHTML = result.description;
+    console.log(img.src);
 }
 
 
-function get_repos(div2) {
+function get_repos(parent, div2) {
     var Http = new XMLHttpRequest();
     url_repos = "https://api.github.com/users/AnthonyPerniaH/repos";
     Http.open("GET", url_repos);
     Http.send();
     Http.onreadystatechange = (e) => {
         var result = JSON.parse(Http.response);
-        for (var i=0; i<result.length;i++){
-            create_card(div2,result[i]);
+        for (var i = 0; i < result.length; i++) {
+            create_card(parent, div2, result[i]);
         }
     }
 }
 
-
-div2 = create_element_init();
-get_repos(div2);
-create_card();
+var parent = document.getElementById("projects2");
+div2 = create_element_init(parent);
+get_repos(parent, div2);
 
