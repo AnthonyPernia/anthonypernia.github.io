@@ -1,1 +1,1 @@
-Pagina realizada unicamente con HTML,CSS y Javascript, usando Bootstrap. Para posteriormente ser publicada en Github Pages
+Pagina realizada unicamente con HTML5,CSS3 y Javascript, usando Bootstrap4. Para posteriormente ser publicada en Github Pages✔🔥🔥
