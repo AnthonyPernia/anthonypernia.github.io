@@ -17,7 +17,7 @@ function get_data(element) {
         var result = JSON.parse(Http.response);
         link1.href = result.html_url;
         link2.href = result.html_url;
-        title.innerHTML = result.name;
+        title.innerHTML = result.name.replace(/([A-Z])/g, ' $1').trim();
         img.src="https://raw.githubusercontent.com/AnthonyPerniaH/" + result.name + "/master/img_preview/preview.png";
         description.innerHTML = result.description;
     }
