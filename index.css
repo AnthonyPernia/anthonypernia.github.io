@@ -112,23 +112,8 @@
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-
-#projects2 .black-text-anthony-h1{
-    font-weight: bold;
-    font-size: calc(0.5em + 0.8vw);
-    font-family: 'Helvetica', 'Arial', sans-serif;
+#projects .card-pro{
+    border-radius: 1.2ex;
+    border-color:  #b2b8c2;
 }
-
-#projects2 .black-text-anthony-h2{
-    font-weight: bold;
-    font-size: calc(0.5em + 0.5vw);
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
-#projects2 .black-text-anthony-h3{
-    font-size: calc(0.4em + 0.4vw);
-    font-family: 'helvetica', 'Arial', sans-serif;
-}
-
-
-
 
