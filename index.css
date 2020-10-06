@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Ropa Sans', sans-serif;
+}
 
 .navbar{
     background-color: #24292e !important;
@@ -14,7 +16,7 @@
 
 }
 .text-cv{
-    color: #97c93e !important;
+    color:#DE5600 !important;
 }
 
 #main .carousel-inner img{
@@ -58,16 +60,14 @@
 
 
 #main .white-text-anthony-h1{
-    font-size: calc(1.5em + 1vw);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: calc(2.0em + 1vw);
+    font-family: 'Shadows Into Light', cursive;
 }
 #main .white-text-anthony-h2{
-    font-size: calc(0.5em + 0.5vw);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: calc(0.6em + 0.5vw);
 }
 #header .white-text-anthony-h2{
     font-size: calc(0.5em + 1vw);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .rrss{
     width: calc(1em + 0.5vw);
@@ -75,23 +75,19 @@
 
 #about-section .white-text-anthony-h2{
     font-size: calc(1em + 0.5vw);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .white-text-anthony-h3{
-    font-size: calc(0.5em + 0.5vw);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: calc(0.6em + 0.5vw);
 }
 
 #projects .black-text-anthony-h1{
     font-weight: bold;
-    font-size: calc(0.5em + 0.8vw);
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: calc(0.6em + 0.8vw);
 }
 
 #projects .black-text-anthony-h2{
     font-weight: bold;
-    font-size: calc(0.5em + 0.5vw);
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: calc(0.7em + 0.5vw);
 }
 
 .link, .link:hover, .link:focus, .link:active {
@@ -99,21 +95,83 @@
     color: inherit;
 }
 #projects .black-text-anthony-h3{
-    font-size: calc(0.4em + 0.4vw);
-    font-family: 'helvetica', 'Arial', sans-serif;
+    font-size: calc(0.65em + 0.4vw);
 }
 #contact .white-text-anthony-h2{
-    font-size: calc(0.5em + 0.5vw);
+    font-size: calc(0.6em + 0.5vw);
 }
 
 #blog .black-text-anthony-h1{
     font-weight: bold;
     font-size: calc(0.5em + 0.8vw);
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
-
+/*NUEVO*/
+#main{
+    margin-top: 55px;
+}
+.navbar-toggler{
+    margin-left: 85%;
+}
 #projects .card-pro{
     border-radius: 1.2ex;
     border-color:  #b2b8c2;
 }
 
+.btn-mas, .btn-perfil {
+    width: 150px;
+    margin-left: 27%;
+}
+
+.badge{
+    color: #fff;
+}
+.bdge-success{
+    background-color: #DE5600;
+}
+
+.bdge-danger{
+    background-color: #67704D;
+}
+.bdge-warning{
+    background-color: #007B70;
+}
+
+.bdge-primary{
+    background-color: #61473B;
+}
+#bio{
+    text-align: justify;
+}
+.btn-repo{
+    margin-bottom: 10px;
+}
+.icon-git{
+    margin-left: 50px;
+}
+@media (min-width: 800px){
+    .btn-repo{
+        margin-bottom: 15px;
+    }
+    .image-projects{
+        width: 245px;
+        height: 155px;
+    }
+    .btn-mas, .btn-perfil {
+        margin-left: 44%;
+    }
+    .desc_repo{
+        width: 240px;
+        height: 156px;
+    }
+    .title_repo{
+        width: 237px;
+        height: 31px;
+    }
+    #projects .black-text-anthony-h3{
+        font-size: calc(0.5em + 0.4vw);
+    }
+    #projects .black-text-anthony-h2{
+        font-weight: bold;
+        font-size: calc(0.6em + 0.5vw);
+    }
+}
