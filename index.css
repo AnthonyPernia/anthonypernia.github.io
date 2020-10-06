@@ -87,7 +87,7 @@ body{
 
 #projects .black-text-anthony-h2{
     font-weight: bold;
-    font-size: calc(1em + 0.1vw);
+    font-size: calc(1em + 0.2vw);
 }
 
 .link, .link:hover, .link:focus, .link:active {
@@ -95,7 +95,7 @@ body{
     color: inherit;
 }
 #projects .black-text-anthony-h3{
-    font-size: calc(0.8em + 0.1vw);
+    font-size: calc(0.8em + 0.2vw);
 }
 #contact .white-text-anthony-h2{
     font-size: calc(0.6em + 0.5vw);
