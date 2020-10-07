@@ -66,12 +66,12 @@ body{
 
 @font-face {
     font-family: AnthonyFont;
-    src: url(Antro_Vectra_Bolder.otf);
+    src: url(font/Antro_Vectra_Bolder.otf);
   }
 
 
 #main .white-text-anthony-h2{
-    font-size: calc(0.6em + 0.2vw);
+    font-size: calc(0.7em + 0.2vw);
 }
 #header .white-text-anthony-h2{
     font-size: calc(0.5em + 1vw);
