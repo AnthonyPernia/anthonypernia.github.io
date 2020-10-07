@@ -9,7 +9,7 @@ function get_data(element) {
     var link2 = element.getElementsByTagName("a").item(1);
     var img = element.getElementsByTagName("img").item(0);
     var name = title.getAttribute('repo');
-    var url = 'https://api.github.com/repos/anthonyperniah/' + name;
+    var url = 'https://api.github.com/repos/anthonypernia/' + name;
     var Http = new XMLHttpRequest();
     Http.open("GET", url);
     Http.send();
@@ -18,7 +18,7 @@ function get_data(element) {
         link1.href = result.html_url;
         link2.href = result.html_url;
         title.innerHTML = result.name.replace(/([A-Z])/g, ' $1').trim();
-        img.src="https://raw.githubusercontent.com/AnthonyPerniaH/" + result.name + "/master/img_preview/preview.png";
+        img.src="https://raw.githubusercontent.com/anthonypernia/" + result.name + "/master/img_preview/preview.png";
         description.innerHTML = result.description;
     }
 };
