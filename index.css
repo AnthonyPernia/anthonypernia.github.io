@@ -3,7 +3,7 @@ body{
 }
 
 .navbar{
-    background-color: #24292e !important;
+    background-color: #0C0D0D !important;
 }
 
 #footer a{
@@ -45,12 +45,12 @@ body{
     height: 100%;
 }
 #contact{
-    background-color: #24292e ;
+    background-color: #0C0D0D ;
     color: white ;
 }
 
 #about-section{
-    background-color: #24292e;
+    background-color: #0C0D0D;
     color: white;
 }
 #header .white-text-anthony-h2{
@@ -87,12 +87,13 @@ body{
     font-size: calc(0.6em + 0.5vw);
 }
 
-#projects .black-text-anthony-h1{
-    font-weight: bold;
+#projects .white-text-anthony-h1{
+    color: #fff;
     font-size: calc(1em + 0.5vw);
 }
 
-#projects .black-text-anthony-h2{
+#projects .white-text-anthony-h2{
+    color: #fff;
     font-weight: bold;
     font-size: calc(1em + 0.2vw);
 }
@@ -101,7 +102,7 @@ body{
     text-decoration: none;
     color: inherit;
 }
-#projects .black-text-anthony-h3{
+#projects .white-text-anthony-h3{
     font-size: calc(0.8em + 0.2vw);
 }
 #contact .white-text-anthony-h2{
@@ -121,7 +122,8 @@ body{
 }
 #projects .card-pro{
     border-radius: 1.2ex;
-    border-color:  #b2b8c2;
+
+    background-color: #0C0D0D;
 }
 
 
@@ -147,6 +149,7 @@ body{
 }
 .btn-repo{
     margin-bottom: 10px;
+    background-color: #121313;
 }
 .icon-git{
     margin-left: 50px;
@@ -155,4 +158,8 @@ body{
 .image-projects{
     height: calc(5em + 5vw);
     width: calc(10em + 6vw);
+}
+
+.projects-section{
+    background-color:#121313;
 }
