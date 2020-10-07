@@ -117,10 +117,6 @@ body{
     border-color:  #b2b8c2;
 }
 
-.btn-mas, .btn-perfil {
-    width: 150px;
-    margin-left: 27%;
-}
 
 .badge{
     color: #fff;
@@ -149,3 +145,7 @@ body{
     margin-left: 50px;
 }
 
+.image-projects{
+    height: calc(5em + 5vw);
+    width: calc(10em + 6vw);
+}
