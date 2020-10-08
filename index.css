@@ -163,3 +163,8 @@ body{
 .projects-section{
     background-color:#121313;
 }
+
+.firma{
+
+    size: calc(2em + 2vw);
+}
