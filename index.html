@@ -21,7 +21,7 @@
   <!-- header -->
   <header>
     <nav id='header' class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
-      <div class='container-fluid'>
+      <div class='container'>
         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar'
           aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
           <span class='navbar-toggler-icon'></span>
@@ -43,9 +43,14 @@
             <li class='nav-item'>
               <a class='nav-link' href='#contact'>Contacto</a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link text-cv' href='https://drive.google.com/file/d/1X-TNyFCIXl5QXrtpYQsV6z7BWDWYzGdC/view?usp=sharing'
-                target='_blank'>CV</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-cv" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">CV</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://drive.google.com/file/d/18b1T1bvoy1apSxgrG8TimxLTiYgNVRiU/view?usp=sharing" target='_blank'>Español</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://drive.google.com/file/d/1OmAmFQElHuF87xiKFvoGVZUWVRyVRLTX/view?usp=sharing" target='_blank'>English</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -73,7 +78,7 @@
               <div class='col-md-8 offset-md-2 text-center text-md-center'>
                 <P class='col-md-8 offset-md-2  white-text-anthony-h1'> Anthony Pernia</P>
                 <P class='col-md-8 offset-md-2  white-text-anthony-h2'> Software Developer - Data Engineer</P>
-                <a class='col-md-2' href='https://github.com/anthonypernia' target='_blank'><img class='rrss'
+                <a class='col-md-2' href='https://github.com/anthonyperniah' target='_blank'><img class='rrss'
                     src='assets/images/github.png' alt='Github'></a>
                 <a class='col-md-2' href='https://www.linkedin.com/in/anthonypernia/' target='_blank'><img class='rrss'
                     src='assets/images/linkedin.png' alt='Linkedin'></a>
@@ -102,8 +107,7 @@
           <button type='button' class='white-text-anthony-h3 btn btn-outline-light mb-2' data-toggle='collapse'
             data-target='#bio'>Ver más</button>
           <div class="row align-items-center ">
-            <img class=" col-3 collapse rounded-circle" src="/assets/images/photo1.jpeg" id='bio' alt="">
-            <p class='col-9 collapse white-text-anthony-h3' position='relative' id='bio'>
+            <p class='col-12 collapse white-text-anthony-h3 text-center' id='bio'>
               He trabajado con lenguajes como Java en Android y JSP, JavaScript en Web y programación para Arduino con
               librerías como Johnny-Five. Así mismo he usado el lenguaje nativo basado en C++, Python para análisis de
               datos y machine learning con librerías como Pandas, Sklearn, Tensorflow, Numpy, Torch y NLTK. Para bases
@@ -157,7 +161,7 @@
             </div>
           </div>
         </div>
-       <!-- Tuit analizer -->
+        <!-- Tuit analizer -->
 
         <!-- page -->
         <div class='card card-pro text-center ml-1 mr-1 mt-1 mb-1 img-fluid col-xl-3 col-lg-3 col-md-5 col-sm-12'>
@@ -492,7 +496,7 @@
 
 
   <!--- footer|contacto -->
-  <footer id='contact' class='pb-2 pt-2'>
+  <footer id='contact' class='pb-4 pt-4'>
     <div class='container-fluid'>
       <div class='row'>
         <div class='col text-center'>
@@ -500,16 +504,16 @@
         </div>
       </div>
       <div class='row'>
-        <div class='col text-center pt-2 pb-2'>
-          <a class='white-text-anthony rrss icon-git' href='https://github.com/anthonypernia' target='_blank'><img
+        <div class='col text-center pt-4 pb-4'>
+          <a class='white-text-anthony rrss icon-git' href='https://github.com/anthonyperniah' target='_blank'><img
               class='pl-1 mr-5 rrss' src='assets/images/github.png' alt='Github'></a>
           <a class='white-text-anthony rrss' href='https://www.linkedin.com/in/anthonypernia/' target='_blank'><img
               class='pl-1 mr-5 rrss' src='assets/images/linkedin.png' alt='Linkedin'></a>
           <a class='white-text-anthony rrss' href='mailto:anthonyperniah@gmail.com?subject='><img class='pl-1 mr-5 rrss'
               src='assets/images/mail.png' alt='Mail'></a>
           <a class='white-text-anthony rrss'
-            href='https://drive.google.com/file/d/1X-TNyFCIXl5QXrtpYQsV6z7BWDWYzGdC/view?usp=sharing' target='_blank'><img
-              class='pl-1 mr-5 rrss' src='assets/images/cv.png' alt='CV'></a>
+            href='https://drive.google.com/file/d/1X-TNyFCIXl5QXrtpYQsV6z7BWDWYzGdC/view?usp=sharing'
+            target='_blank'><img class='pl-1 mr-5 rrss' src='assets/images/cv.png' alt='CV'></a>
         </div>
       </div>
     </div>
