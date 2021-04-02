@@ -1,0 +1,115 @@
+$color1: rgba(33, 37, 41, 1);
+$colorGra1: rgba(33, 37, 41, 0.6);
+$colorGra2: rgba(52, 58, 64, 0.5);
+$color3: rgba(73, 80, 87, 1);
+$height1: 94vh;
+$class_carousel: carousel__box__item;
+$text1: "Roboto", sans-serif;
+$grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
+
+@font-face {
+  font-family: AnthonyFont;
+  src: url("../font/font_anthony.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $color1;
+  /*
+NAVBAR
+*/
+  .navBar {
+    a,
+    a:hover {
+      color: white;
+      font-family: $text1;
+      font-weight: 300;
+      text-decoration: none;
+    }
+    .navBar__ul {
+      .navBar__ul__li:hover {
+        background-color: $color3;
+      }
+    }
+  }
+}
+
+/*
+MAIN
+*/
+.carousel__box {
+  .carousel-item {
+    height: $height1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @each $num in 1, 2, 3 {
+    .#{$class_carousel}#{$num} {
+      background-image: $grad1, url("../images/image#{$num}.png");
+    }
+  }
+  .carousel__box__text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title_main {
+      color: white;
+      font-size: calc(2.5em + 1vw);
+      font-family: "AnthonyFont";
+    }
+    .subtitle_main {
+      color: white;
+      font-family: $text1;
+      font-size: calc(0.5em + 0.4vw);
+      font-weight: 300;
+    }
+    .div_icons_main {
+      display: flex;
+      padding: 20px;
+      a {
+        padding-left: 30px;
+        padding-right: 30px;
+        @each $rrss in github, linkedin, mail {
+          .#{$rrss}_icon {
+            content: url("../images/icons/#{$rrss}_icon.png");
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about_div{
+  padding: calc(1em + 1vw);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+ 
+  div{
+    h3{
+      color: white;
+      font-family: $text1;
+      font-weight: 300;
+      font-size: calc(1em + 0.5vw);
+    }
+    h4{
+      color: white;
+      font-family: $text1;
+      font-weight: 100;
+      font-size: calc(0.5em + 0.5vw);
+    }
+  }
+}
