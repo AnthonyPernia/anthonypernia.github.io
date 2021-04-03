@@ -8,7 +8,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #212529;
   /*
 NAVBAR
 */
@@ -23,7 +22,28 @@ body .navBar a:hover {
 }
 
 body .navBar .navBar__ul .navBar__ul__li:hover {
-  background-color: #495057;
+  background-color: #26262c;
+}
+
+body .title_primary {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.8em + 0.5vw);
+}
+
+body .text_secondary {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: calc(0.4em + 0.4vw);
+}
+
+body .text_footer {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: calc(0.5em + 0.5vw);
 }
 
 /*
@@ -112,8 +132,12 @@ MAIN
   height: 22px;
 }
 
-.about_div {
-  padding: calc(1em + 1vw);
+#about_section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#131316), to(#26262c));
+  background-image: linear-gradient(180deg, #131316, #26262c);
+}
+
+#about_section .about_div {
   z-index: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -123,17 +147,22 @@ MAIN
           align-items: center;
 }
 
-.about_div div h3 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: calc(1em + 0.5vw);
+#projects_section {
+  background-color: #26262c;
 }
 
-.about_div div h4 {
+#projects_section .projects_div .img_card {
+  width: calc(10em + 10vw);
+}
+
+#footer_section {
+  background-color: #131316;
+}
+
+#footer_section .footer_div .footer_div_text {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: calc(0.5em + 0.5vw);
+  font-size: calc(0.4em + 0.4vw);
 }
 /*# sourceMappingURL=styles.css.map */

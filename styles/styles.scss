@@ -1,11 +1,14 @@
-$color1: rgba(33, 37, 41, 1);
+$color1: rgba(19, 19, 22, 1);
 $colorGra1: rgba(33, 37, 41, 0.6);
 $colorGra2: rgba(52, 58, 64, 0.5);
-$color3: rgba(73, 80, 87, 1);
+$color2: rgba(28, 28, 33, 1);
+$color3: rgba(38, 38, 44, 1);
+$color4: rgba(47, 48, 55, 1);
 $height1: 94vh;
 $class_carousel: carousel__box__item;
 $text1: "Roboto", sans-serif;
 $grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
+$grad2: linear-gradient(90deg, $color2, $color2);
 
 @font-face {
   font-family: AnthonyFont;
@@ -16,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $color1;
   /*
 NAVBAR
 */
@@ -33,6 +35,24 @@ NAVBAR
         background-color: $color3;
       }
     }
+  }
+  .title_primary {
+    color: white;
+    font-family: $text1;
+    font-weight: 300;
+    font-size: calc(0.8em + 0.5vw);
+  }
+  .text_secondary {
+    color: white;
+    font-family: $text1;
+    font-weight: 100;
+    font-size: calc(0.4em + 0.4vw);
+  }
+  .text_footer {
+    color: white;
+    font-family: $text1;
+    font-weight: 100;
+    font-size: calc(0.5em + 0.5vw);
   }
 }
 
@@ -91,25 +111,31 @@ MAIN
     }
   }
 }
+#about_section {
+  background-image: linear-gradient(180deg, $color1, $color3);
+  .about_div {
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-.about_div{
-  padding: calc(1em + 1vw);
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
- 
-  div{
-    h3{
-      color: white;
-      font-family: $text1;
-      font-weight: 300;
-      font-size: calc(1em + 0.5vw);
+#projects_section {
+  background-color: $color3;
+  .projects_div {
+    .img_card {
+      width: calc(10em + 10vw);
     }
-    h4{
+  }
+}
+#footer_section {
+  background-color: $color1;
+  .footer_div {
+    .footer_div_text {
       color: white;
       font-family: $text1;
       font-weight: 100;
-      font-size: calc(0.5em + 0.5vw);
+      font-size: calc(0.4em + 0.4vw);
     }
   }
 }
