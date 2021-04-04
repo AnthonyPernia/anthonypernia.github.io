@@ -1,5 +1,5 @@
-var elements_div = document.getElementsByClassName("card");
-
+//Script de carga de data
+var elements_div = document.getElementsByClassName("card_container");
 function get_data(element) {
   var title = element.getElementsByTagName("h4").item(0);
   var description = element.getElementsByTagName("p").item(0);
@@ -32,15 +32,19 @@ function set_data(elements_div) {
 
 document.addEventListener("DOMContentLoaded", set_data(elements_div));
 
-window.onscroll = function () {
-  scrollFunction();
-};
+//Script de scroll
 
 function scrollFunction() {
   //if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-  if (document.documentElement.scrollTop > 300) {
+  if (document.documentElement.scrollTop > 350) {
     document.getElementById("navbar_sign_id").style.visibility='visible';
   } else {
     document.getElementById("navbar_sign_id").style.visibility='hidden';
   }
 }
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+

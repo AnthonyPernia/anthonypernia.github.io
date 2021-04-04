@@ -13,11 +13,13 @@ NAVBAR
 */
 }
 
-body .navBar .navbar {
+body .navBar nav {
   background-color: #131316;
 }
 
-body .navBar .navbar_sign {
+body .navBar #navbar_sign_id {
+  visibility: hidden;
+  color: white;
   font-size: calc(0.6em + 0.6vw);
   font-family: "AnthonyFont";
 }
@@ -38,17 +40,10 @@ body .title_primary {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(0.8em + 0.8vw);
 }
 
 body .text_secondary {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: calc(0.4em + 0.5vw);
-}
-
-body .text_footer {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -147,7 +142,6 @@ MAIN
 }
 
 #about_section .about_div {
-  z-index: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -227,10 +221,28 @@ MAIN
   background-color: #131316;
 }
 
-#footer_section .footer_div .footer_div_text {
+#footer_section .footer_div .footer_text {
   color: white;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: calc(0.4em + 0.4vw);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: calc(0.4em + 0.3vw);
 }
-/*# sourceMappingURL=styles.css.map */
+
+#blog_section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#26262c), to(#2f3037));
+  background-image: linear-gradient(180deg, #26262c, #2f3037);
+}
+
+#blog_section .blog_div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*
+    Card main
+    */
+}
+/*# sourceMappingURL=style.css.map */

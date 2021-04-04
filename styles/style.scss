@@ -4,8 +4,8 @@ $colorGra2: rgba(52, 58, 64, 0.5);
 $color2: rgba(28, 28, 33, 1);
 $color3: rgba(38, 38, 44, 1);
 $color4: rgba(47, 48, 55, 1);
-$color5: rgba(57, 58, 65,1);
-$color6: rgba(106, 107, 112,1);
+$color5: rgba(57, 58, 65, 1);
+$color6: rgba(106, 107, 112, 1);
 $color7: white;
 $height1: 94vh;
 $class_carousel: carousel__box__item;
@@ -26,14 +26,16 @@ body {
 NAVBAR
 */
   .navBar {
-    .navbar{
+    nav{
       background-color: $color1;
     }
-    .navbar_sign{
+    #navbar_sign_id {
+      visibility: hidden;
+      color: $color7;
       font-size: calc(0.6em + 0.6vw);
       font-family: "AnthonyFont";
-
     }
+
     a,
     a:hover {
       color: $color7;
@@ -41,7 +43,7 @@ NAVBAR
       font-weight: 300;
       text-decoration: none;
     }
-    .nav-item:hover{
+    .nav-item:hover {
       background-color: $color3;
     }
   }
@@ -49,15 +51,9 @@ NAVBAR
     color: $color7;
     font-family: $text1;
     font-weight: 300;
-    font-size: calc(0.8em + 0.5vw);
+    font-size: calc(0.8em + 0.8vw);
   }
   .text_secondary {
-    color: $color7;
-    font-family: $text1;
-    font-weight: 100;
-    font-size: calc(0.4em + 0.5vw);
-  }
-  .text_footer {
     color: $color7;
     font-family: $text1;
     font-weight: 100;
@@ -123,7 +119,6 @@ MAIN
 #about_section {
   background-image: linear-gradient(180deg, $color1, $color2);
   .about_div {
-    z-index: 1;
     justify-content: center;
     align-items: center;
   }
@@ -150,11 +145,11 @@ MAIN
         color: $color7;
         font-family: $text1;
         text-decoration: none;
-        h4{
+        h4 {
           font-weight: 300;
           font-size: calc(0.6em + 0.6vw);
         }
-        p{
+        p {
           font-weight: 100;
           font-size: calc(0.5em + 0.4vw);
         }
@@ -172,11 +167,25 @@ MAIN
 #footer_section {
   background-color: $color1;
   .footer_div {
-    .footer_div_text {
-      color: white;
-      font-family: $text1;
+    .footer_text {
+      color: $color7;
       font-weight: 300;
-      font-size: calc(0.4em + 0.4vw);
+      font-family: $text1;
+      text-decoration: none;
+      font-size: calc(0.4em + 0.3vw);
+    }
+  }
+}
+#blog_section{
+  background-image: linear-gradient(180deg, $color3, $color4);
+  .blog_div {
+    justify-content: center;
+    align-items: center;
+    /*
+    Card main
+    */
+    .card_blog_main{
+      
     }
   }
 }
