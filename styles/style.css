@@ -29,6 +29,7 @@ body .navBar a:hover {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-size: calc(0.4em + 0.5vw);
   text-decoration: none;
 }
 
@@ -47,7 +48,7 @@ body .text_secondary {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: calc(0.5em + 0.5vw);
+  font-size: calc(0.5em + 0.4vw);
 }
 
 /*
@@ -226,7 +227,7 @@ MAIN
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  font-size: calc(0.4em + 0.3vw);
+  font-size: calc(0.4em + 0.4vw);
 }
 
 #blog_section {
