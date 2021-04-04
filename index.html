@@ -20,30 +20,45 @@
 
 <body>
     <header>
-
-
         <div class="navBar">
-            <nav class="fixed-top navbar_container">
-                <ul class="nav justify-content-center ">
-                    <div class="offset-md-4 col-4 text-center">
-                        <h2 id="navbar_sign_id" class="nav-link navbar_sign">Anthony Pernia</h2>
-                    </div>
-                    <div class="col-4">
-                        <ul class="nav justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a id="navbar_sign_id" class="navbar-brand offset-4 col-4 text-center" href="#">Anthony Pernia</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-4 justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active text_navbar" href="#">Inicio</a>
+                                <a class="nav-link active text-nav" aria-current="page" href="#main">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text_navbar" href="#">Sobre mi</a>
+                                <a class="nav-link text-nav" href="#about_section">Sobre mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text_navbar" href="#">Proyectos</a>
+                                <a class="nav-link text-nav" href="#projects_section">Proyectos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text_navbar" href="#">CV</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-nav" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    CV
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item text-nav-button"
+                                            href="https://drive.google.com/file/d/18b1T1bvoy1apSxgrG8TimxLTiYgNVRiU/view?usp=sharing"
+                                            target="_blank">Español</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-nav-button"
+                                            href="https://drive.google.com/file/d/1OmAmFQElHuF87xiKFvoGVZUWVRyVRLTX/view?usp=sharing"
+                                            target="_blank">Ingles</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -64,11 +79,14 @@
                             <h2 class="subtitle_main">Software developer - Data Architect</h2>
                             <div class="div_icons_main">
 
-                                <a href=""><img class="github_icon" src="" alt=""></a>
+                                <a href="https://github.com/anthonyperniah" target="_blank"><img class="github_icon"
+                                        src="" alt=""></a>
 
-                                <a href=""><img class="linkedin_icon" src="" alt=""></a>
+                                <a href="https://www.linkedin.com/in/anthonypernia/" target="_blank"><img
+                                        class="linkedin_icon" src="" alt=""></a>
 
-                                <a href=""><img class="mail_icon" src="" alt=""></a>
+                                <a href='mailto:<nowiki>anthonyperniah@gmail.com?subject="Mail desde Page"'
+                                    target="_blank"><img class="mail_icon" src="" alt=""></a>
 
                             </div>
                         </div>
@@ -281,15 +299,16 @@
                 </div>
 
                 <!--main blog-->
-                <div class="card card_blog_main m-1" style="max-width: 100%;">
+                <div class="card card_blog card_blog_main m-1" style="max-width: 100%;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." alt="...">
+                            <img class="card_blog_main_img" src="..." alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                <h5 class="card-title card_blog_main_title">Card title</h5>
+                                <p class="card-text card_blog_main_text">This is a wider card with supporting text below
+                                    as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
@@ -299,7 +318,7 @@
                 <!--main blog-->
                 <!--secondary blog-->
                 <div class="card-group">
-                    <div class="card m-1">
+                    <div class="card card_blog m-1">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -310,7 +329,7 @@
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card m-1">
+                    <div class="card card_blog m-1">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -327,7 +346,7 @@
                 <!--secondary blog-->
                 <!--tertiary blog-->
                 <div class="card-group">
-                    <div class="card m-1">
+                    <div class="card card_blog m-1">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -338,7 +357,7 @@
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card m-1">
+                    <div class="card card_blog m-1">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -349,7 +368,7 @@
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card m-1">
+                    <div class="card card_blog m-1">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -382,11 +401,15 @@
                     <div class="row text-center justify-content-center align-items-center">
                         <a class="col-2 footer_text" href="" target='_blank'>Instagram</a>
                         <a class="col-1 footer_text" href="" target='_blank'>·</a>
-                        <a class="col-2 footer_text" href="" target='_blank'>Facebook</a>
+                        <a class="col-2 footer_text" href="https://github.com/anthonyperniah" target='_blank'>Github</a>
                         <a class="col-1 footer_text" href="" target='_blank'>·</a>
-                        <a class="col-2 footer_text" href="" target='_blank'>Mail</a>
+                        <a class="col-2 footer_text"
+                            href='mailto:<nowiki>anthonyperniah@gmail.com?subject="Mail desde Page"'
+                            target='_blank'>Mail</a>
                         <a class="col-1 footer_text" href="" target='_blank'>·</a>
-                        <a class="col-2 footer_text" href="" target='_blank'>CV</a>
+                        <a class="col-2 footer_text"
+                            href="https://drive.google.com/file/d/18b1T1bvoy1apSxgrG8TimxLTiYgNVRiU/view?usp=sharing"
+                            target='_blank'>CV</a>
                     </div>
                 </div>
             </div>

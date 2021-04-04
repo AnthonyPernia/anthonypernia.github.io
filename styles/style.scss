@@ -26,7 +26,7 @@ body {
 NAVBAR
 */
   .navBar {
-    nav{
+    .navbar{
       background-color: $color1;
     }
     #navbar_sign_id {
@@ -36,17 +36,28 @@ NAVBAR
       font-family: "AnthonyFont";
     }
 
-    a,
-    a:hover {
+    .text-nav{
       color: $color7;
       font-family: $text1;
       font-weight: 300;
       font-size: calc(0.4em + 0.5vw);
       text-decoration: none;
     }
-    .nav-item:hover {
+    .text-nav:hover {
+      color: $color7;
       background-color: $color3;
     }
+    ul{
+      background-color: $color1;
+      .text-nav-button{
+        color: $color7;
+      }
+      .text-nav-button:hover {
+        color: $color7;
+        background-color: $color3;
+      }
+    }
+
   }
   .title_primary {
     color: $color7;
@@ -156,10 +167,9 @@ MAIN
         }
       }
       .card {
-        background-color: $color1;
+        background-color: $color3;
       }
       .card:hover {
-        background-color: $color3;
         transform: rotate(0.5deg);
       }
     }

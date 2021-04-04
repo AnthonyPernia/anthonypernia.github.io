@@ -13,7 +13,7 @@ NAVBAR
 */
 }
 
-body .navBar nav {
+body .navBar .navbar {
   background-color: #131316;
 }
 
@@ -24,8 +24,7 @@ body .navBar #navbar_sign_id {
   font-family: "AnthonyFont";
 }
 
-body .navBar a,
-body .navBar a:hover {
+body .navBar .text-nav {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -33,7 +32,21 @@ body .navBar a:hover {
   text-decoration: none;
 }
 
-body .navBar .nav-item:hover {
+body .navBar .text-nav:hover {
+  color: white;
+  background-color: #26262c;
+}
+
+body .navBar ul {
+  background-color: #131316;
+}
+
+body .navBar ul .text-nav-button {
+  color: white;
+}
+
+body .navBar ul .text-nav-button:hover {
+  color: white;
   background-color: #26262c;
 }
 
@@ -209,11 +222,10 @@ MAIN
 }
 
 #projects_section .projects_div .peopleDiv__itemContainer .card {
-  background-color: #131316;
+  background-color: #26262c;
 }
 
 #projects_section .projects_div .peopleDiv__itemContainer .card:hover {
-  background-color: #26262c;
   -webkit-transform: rotate(0.5deg);
           transform: rotate(0.5deg);
 }
