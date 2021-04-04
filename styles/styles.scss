@@ -6,7 +6,7 @@ $color3: rgba(38, 38, 44, 1);
 $color4: rgba(47, 48, 55, 1);
 $color5: rgba(57, 58, 65,1);
 $color6: rgba(106, 107, 112,1);
-$color5: white;
+$color7: white;
 $height1: 94vh;
 $class_carousel: carousel__box__item;
 $text1: "Roboto", sans-serif;
@@ -36,26 +36,29 @@ NAVBAR
     }
     a,
     a:hover {
-      color: $color5;
+      color: $color7;
       font-family: $text1;
       font-weight: 300;
       text-decoration: none;
     }
+    .nav-item:hover{
+      background-color: $color3;
+    }
   }
   .title_primary {
-    color: $color5;
+    color: $color7;
     font-family: $text1;
     font-weight: 300;
     font-size: calc(0.8em + 0.5vw);
   }
   .text_secondary {
-    color: $color5;
+    color: $color7;
     font-family: $text1;
     font-weight: 100;
     font-size: calc(0.4em + 0.5vw);
   }
   .text_footer {
-    color: $color5;
+    color: $color7;
     font-family: $text1;
     font-weight: 100;
     font-size: calc(0.5em + 0.5vw);
@@ -90,12 +93,12 @@ MAIN
     flex-direction: column;
 
     .title_main {
-      color: $color5;
+      color: $color7;
       font-size: calc(2.5em + 1vw);
       font-family: "AnthonyFont";
     }
     .subtitle_main {
-      color: $color5;
+      color: $color7;
       font-family: $text1;
       font-size: calc(0.5em + 0.4vw);
       font-weight: 300;
@@ -139,12 +142,12 @@ MAIN
     .peopleDiv__itemContainer {
       display: flex;
       flex-wrap: wrap;
-      width: 70%;
+      width: 80%;
       flex-direction: row;
       justify-content: space-evenly;
       a,
       a:hover {
-        color: $color5;
+        color: $color7;
         font-family: $text1;
         text-decoration: none;
         h4{
@@ -157,11 +160,11 @@ MAIN
         }
       }
       .card {
-        background-color: $color4;
-        margin-bottom: 10px;
+        background-color: $color1;
       }
       .card:hover {
-        transform: rotate(1deg);
+        background-color: $color3;
+        transform: rotate(0.5deg);
       }
     }
   }

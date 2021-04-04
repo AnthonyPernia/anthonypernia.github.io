@@ -30,6 +30,10 @@ body .navBar a:hover {
   text-decoration: none;
 }
 
+body .navBar .nav-item:hover {
+  background-color: #26262c;
+}
+
 body .title_primary {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -180,7 +184,7 @@ MAIN
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -210,13 +214,13 @@ MAIN
 }
 
 #projects_section .projects_div .peopleDiv__itemContainer .card {
-  background-color: #2f3037;
-  margin-bottom: 10px;
+  background-color: #131316;
 }
 
 #projects_section .projects_div .peopleDiv__itemContainer .card:hover {
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+  background-color: #26262c;
+  -webkit-transform: rotate(0.5deg);
+          transform: rotate(0.5deg);
 }
 
 #footer_section {
