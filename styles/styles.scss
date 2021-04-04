@@ -4,6 +4,9 @@ $colorGra2: rgba(52, 58, 64, 0.5);
 $color2: rgba(28, 28, 33, 1);
 $color3: rgba(38, 38, 44, 1);
 $color4: rgba(47, 48, 55, 1);
+$color5: rgba(57, 58, 65,1);
+$color6: rgba(106, 107, 112,1);
+$color5: white;
 $height1: 94vh;
 $class_carousel: carousel__box__item;
 $text1: "Roboto", sans-serif;
@@ -23,33 +26,36 @@ body {
 NAVBAR
 */
   .navBar {
+    .navbar{
+      background-color: $color1;
+    }
+    .navbar_sign{
+      font-size: calc(0.6em + 0.6vw);
+      font-family: "AnthonyFont";
+
+    }
     a,
     a:hover {
-      color: white;
+      color: $color5;
       font-family: $text1;
       font-weight: 300;
       text-decoration: none;
     }
-    .navBar__ul {
-      .navBar__ul__li:hover {
-        background-color: $color3;
-      }
-    }
   }
   .title_primary {
-    color: white;
+    color: $color5;
     font-family: $text1;
     font-weight: 300;
     font-size: calc(0.8em + 0.5vw);
   }
   .text_secondary {
-    color: white;
+    color: $color5;
     font-family: $text1;
     font-weight: 100;
-    font-size: calc(0.4em + 0.4vw);
+    font-size: calc(0.4em + 0.5vw);
   }
   .text_footer {
-    color: white;
+    color: $color5;
     font-family: $text1;
     font-weight: 100;
     font-size: calc(0.5em + 0.5vw);
@@ -84,12 +90,12 @@ MAIN
     flex-direction: column;
 
     .title_main {
-      color: white;
+      color: $color5;
       font-size: calc(2.5em + 1vw);
       font-family: "AnthonyFont";
     }
     .subtitle_main {
-      color: white;
+      color: $color5;
       font-family: $text1;
       font-size: calc(0.5em + 0.4vw);
       font-weight: 300;
@@ -112,7 +118,7 @@ MAIN
   }
 }
 #about_section {
-  background-image: linear-gradient(180deg, $color1, $color3);
+  background-image: linear-gradient(180deg, $color1, $color2);
   .about_div {
     z-index: 1;
     justify-content: center;
@@ -121,10 +127,42 @@ MAIN
 }
 
 #projects_section {
-  background-color: $color3;
+  background-image: linear-gradient(180deg, $color2, $color3);
   .projects_div {
-    .img_card {
-      width: calc(10em + 10vw);
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    .peopleDiv__itemContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      a,
+      a:hover {
+        color: $color5;
+        font-family: $text1;
+        text-decoration: none;
+        h4{
+          font-weight: 300;
+          font-size: calc(0.6em + 0.6vw);
+        }
+        p{
+          font-weight: 100;
+          font-size: calc(0.5em + 0.4vw);
+        }
+      }
+      .card {
+        background-color: $color4;
+        margin-bottom: 10px;
+      }
+      .card:hover {
+        transform: rotate(1deg);
+      }
     }
   }
 }
@@ -134,7 +172,7 @@ MAIN
     .footer_div_text {
       color: white;
       font-family: $text1;
-      font-weight: 100;
+      font-weight: 300;
       font-size: calc(0.4em + 0.4vw);
     }
   }

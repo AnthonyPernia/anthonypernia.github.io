@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="images/icons/ico.ico">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -19,24 +20,35 @@
 
 <body>
     <header>
+
+
         <div class="navBar">
-            <ul class="nav justify-content-end navBar__ul fixed-top">
-                <li class="nav-item navBar__ul__li">
-                    <a class="nav-link active" aria-current="page" href="">Inicio</a>
-                </li>
-                <li class="nav-item navBar__ul__li">
-                    <a class="nav-link" href="">Sobre mi</a>
-                </li>
-                <li class="nav-item navBar__ul__li">
-                    <a class="nav-link" href="">Proyectos</a>
-                </li>
-                <li class="nav-item navBar__ul__li">
-                    <a class="nav-link" href="">Contacto</a>
-                </li>
-                <li class="nav-item navBar__ul__li">
-                    <a class="nav-link" href="">CV</a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid navbar_sign_div">
+                    <div class="collapse navbar-collapse">
+                        <a id="navbar_sign_id" class="navbar_sign" href="#">Anthony Pernia</a>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -108,78 +120,197 @@
         <!--Proyectos-->
         <section id="projects_section">
             <div class="projects_div">
-                <div class="col-12 pt-5 pb-1 text-center">
-                    <h3 class="title_primary">Proyectos</h3>
-                </div>
-                <div class="row col-12 mt-3 justify-content-center img-fluid ">
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                <h2 class="title_primary mb-4">Proyectos</h2>
+                <div class="peopleDiv__itemContainer">
+                    <!--page-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='anthonypernia.github.io'>Titulo por defecto</h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!--page-->
+                    <!--BotTelegramWithDocker-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='BotTelegramWithDocker'>Titulo por defecto</h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!--BotTelegramWithDocker-->
+                    <!--TuitsAnalyzerElectionsUnitedStates2020-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='TuitsAnalyzerElectionsUnitedStates2020'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!--TuitsAnalyzerElectionsUnitedStates2020-->
+                    <!--AlgoritmosDeClasificacionDeTexto-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='AlgoritmosDeClasificacionDeTexto'>Titulo por defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!--AlgoritmosDeClasificacionDeTexto-->
+                    <!--PostgresqlParaCienciaDeDatos-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='PostgresqlParaCienciaDeDatos'>Titulo por defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-                    <div class="col-3">
-                        <div class="card mb-3 card_div align-items-center">
-                            <img src="images/image1.png" class="card-img-top img_card" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!--PostgresqlParaCienciaDeDatos-->
+                    <!--TransmisorYReceptorConArduinoYJoystickConModuloNrf24l01-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects"
+                                    repo='TransmisorYReceptorConArduinoYJoystickConModuloNrf24l01'>Titulo por defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!---->
-
+                    <!--TransmisorYReceptorConArduinoYJoystickConModuloNrf24l01-->
+                    <!--WebScraperPagina12-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='WebScraperPagina12'>Titulo por defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--WebScraperPagina12-->
+                    <!--WebScraperLatamAirlines-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='WebScraperLatamAirlines'>Titulo por defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--WebScraperLatamAirlines-->
+                    <!--AlgebraLinealAplicadaAMachineLearning-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='AlgebraLinealAplicadaAMachineLearning'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--AlgebraLinealAplicadaAMachineLearning-->
+                    <!--AlgebraLinealConPython-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='AlgebraLinealConPython'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--AlgebraLinealConPython-->
+                    <!--FundamentosPracticosDeMachineLearning-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='FundamentosPracticosDeMachineLearning'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--FundamentosPracticosDeMachineLearning-->
+                    <!--IntroduccionAMachineLearning-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='IntroduccionAMachineLearning'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--IntroduccionAMachineLearning-->
+                    <!--ManipulacionDeDatosConPandas-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='ManipulacionDeDatosConPandas'>Titulo por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--ManipulacionDeDatosConPandas-->
+                    <!--ProcesamientoDeLenguajeNaturalConPythonYNltk-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='ProcesamientoDeLenguajeNaturalConPythonYNltk'>Titulo
+                                    por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--ProcesamientoDeLenguajeNaturalConPythonYNltk-->
+                    <!--WebScrapingConXpath-->
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img class="card__img card-img-top img_projects" src="images/image1.png" alt="foto de proyecto">
+                        <a href="" target='_blank'>
+                            <div class="card-body">
+                                <h4 class="title_projects" repo='WebScrapingConXpath'>Titulo
+                                    por
+                                    defecto
+                                </h4>
+                                <p class="text_projects">Texto por defecto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--WebScrapingConXpath-->
                 </div>
             </div>
         </section>
@@ -188,7 +319,9 @@
     <footer id="footer_section" class="">
         <div class="container footer_div pt-1">
             <div class="row">
-                <div class="col-md-4"><h4 class="footer_div_text">Anthony Pernia @AnthonyPerniaH © 2021</h4></div>
+                <div class="col-md-4">
+                    <h4 class="footer_div_text">Anthony Pernia @AnthonyPerniaH © 2021</h4>
+                </div>
                 <div class="col-md-4 offset-md-4">
                     <div class="row text-center justify-content-center align-items-center">
                         <h5 class="col-2 footer_div_text">Instagram</h5>
@@ -200,12 +333,13 @@
                         <h5 class="col-2 footer_div_text">CV</h5>
                     </div>
                 </div>
-              </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

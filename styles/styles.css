@@ -13,16 +13,21 @@ NAVBAR
 */
 }
 
+body .navBar .navbar {
+  background-color: #131316;
+}
+
+body .navBar .navbar_sign {
+  font-size: calc(0.6em + 0.6vw);
+  font-family: "AnthonyFont";
+}
+
 body .navBar a,
 body .navBar a:hover {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-decoration: none;
-}
-
-body .navBar .navBar__ul .navBar__ul__li:hover {
-  background-color: #26262c;
 }
 
 body .title_primary {
@@ -36,7 +41,7 @@ body .text_secondary {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: calc(0.4em + 0.4vw);
+  font-size: calc(0.4em + 0.5vw);
 }
 
 body .text_footer {
@@ -133,8 +138,8 @@ MAIN
 }
 
 #about_section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#131316), to(#26262c));
-  background-image: linear-gradient(180deg, #131316, #26262c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#131316), to(#1c1c21));
+  background-image: linear-gradient(180deg, #131316, #1c1c21);
 }
 
 #about_section .about_div {
@@ -148,11 +153,70 @@ MAIN
 }
 
 #projects_section {
-  background-color: #26262c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c1c21), to(#26262c));
+  background-image: linear-gradient(180deg, #1c1c21, #26262c);
 }
 
-#projects_section .projects_div .img_card {
-  width: calc(10em + 10vw);
+#projects_section .projects_div {
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer a,
+#projects_section .projects_div .peopleDiv__itemContainer a:hover {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer a h4,
+#projects_section .projects_div .peopleDiv__itemContainer a:hover h4 {
+  font-weight: 300;
+  font-size: calc(0.6em + 0.6vw);
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer a p,
+#projects_section .projects_div .peopleDiv__itemContainer a:hover p {
+  font-weight: 100;
+  font-size: calc(0.5em + 0.4vw);
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer .card {
+  background-color: #2f3037;
+  margin-bottom: 10px;
+}
+
+#projects_section .projects_div .peopleDiv__itemContainer .card:hover {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
 }
 
 #footer_section {
@@ -162,7 +226,7 @@ MAIN
 #footer_section .footer_div .footer_div_text {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: calc(0.4em + 0.4vw);
 }
 /*# sourceMappingURL=styles.css.map */
