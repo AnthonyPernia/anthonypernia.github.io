@@ -43,6 +43,9 @@ body .navBar ul {
 
 body .navBar ul .text-nav-button {
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.4em + 0.5vw);
 }
 
 body .navBar ul .text-nav-button:hover {

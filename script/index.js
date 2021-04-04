@@ -1,6 +1,7 @@
 //Script de carga de data
-var elements_div = document.getElementsByClassName("card_container");
-function get_data(element) {
+var elements_div_projects = document.getElementsByClassName("card_container");
+
+function get_data_projects(element) {
   var title = element.getElementsByTagName("h4").item(0);
   var description = element.getElementsByTagName("p").item(0);
   var link1 = element.getElementsByTagName("a").item(0);
@@ -26,20 +27,19 @@ function get_data(element) {
 
 function set_data(elements_div) {
   for (var e = 0; e < elements_div.length; e++) {
-    get_data(elements_div[e]);
+    get_data_projects(elements_div[e]);
   }
 }
 
-document.addEventListener("DOMContentLoaded", set_data(elements_div));
+document.addEventListener("DOMContentLoaded", set_data(elements_div_projects));
 
 //Script de scroll
 
 function scrollFunction() {
-  //if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
   if (document.documentElement.scrollTop > 350) {
-    document.getElementById("navbar_sign_id").style.visibility='visible';
+    document.getElementById("navbar_sign_id").style.visibility = "visible";
   } else {
-    document.getElementById("navbar_sign_id").style.visibility='hidden';
+    document.getElementById("navbar_sign_id").style.visibility = "hidden";
   }
 }
 

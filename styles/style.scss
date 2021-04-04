@@ -51,6 +51,9 @@ NAVBAR
       background-color: $color1;
       .text-nav-button{
         color: $color7;
+        font-family: $text1;
+        font-weight: 300;
+        font-size: calc(0.4em + 0.5vw);
       }
       .text-nav-button:hover {
         color: $color7;
