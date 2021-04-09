@@ -26,7 +26,7 @@ body {
 NAVBAR
 */
   .navBar {
-    .navbar{
+    .navbar {
       background-color: $color1;
     }
     #navbar_sign_id {
@@ -36,7 +36,7 @@ NAVBAR
       font-family: "AnthonyFont";
     }
 
-    .text-nav{
+    .text-nav {
       color: $color7;
       font-family: $text1;
       font-weight: 300;
@@ -47,9 +47,9 @@ NAVBAR
       color: $color7;
       background-color: $color3;
     }
-    ul{
+    ul {
       background-color: $color1;
-      .text-nav-button{
+      .text-nav-button {
         color: $color7;
         font-family: $text1;
         font-weight: 300;
@@ -60,7 +60,6 @@ NAVBAR
         background-color: $color3;
       }
     }
-
   }
   .title_primary {
     color: $color7;
@@ -190,16 +189,35 @@ MAIN
     }
   }
 }
-#blog_section{
+#blog_section {
   background-image: linear-gradient(180deg, $color3, $color4);
   .blog_div {
-    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /*
-    Card main
-    */
-    .card_blog_main{
-      
+    padding: 20px;
+
+      color: $color7;
+      font-family: $text1;
+      text-decoration: none;
+      h5 {
+        font-weight: 300;
+        color: $color7;
+        font-size: calc(0.6em + 0.6vw);
+      }
+      p, small{
+        font-weight: 100;
+        font-size: calc(0.5em + 0.4vw);
+      }
+
+    .card {
+      background-color: $color3;
+    }
+    .card:hover {
+      transform: rotate(0.5deg);
     }
   }
 }

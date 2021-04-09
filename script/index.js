@@ -27,36 +27,45 @@ function get_data_projects(element) {
   };
 }
 
-function get_data_blog(element) {
+function set_data_blog(element, data) {
   var title = element.getElementsByTagName("h5").item(0);
   var body = element.getElementsByTagName("p").item(0);
   var img = element.getElementsByTagName("img").item(0);
-  var Http = new XMLHttpRequest();
-  Http.open("GET", blog_data);
-  Http.send();
-  Http.onreadystatechange = (e) => {
-    var result = JSON.parse(Http.response);
+  var time = element.getElementsByTagName("small").item(0);
+  title.innerHTML = data["title"]
+  body.innerHTML = data["text"]
+  img.src = data["img"]
+  time.innerHTML = "Publicado el : "+data["time"]
+  //var Http = new XMLHttpRequest();
+  //Http.open("GET", blog_data);
+  //Http.send();
+  //Http.onreadystatechange = (e) => {
+    //var result = JSON.parse(Http.response);
     //link1.href = result.html_url;
-    console.log(result);
+    //console.log(result);
     //link2.href = result.html_url;
     // title.innerHTML = result.name.replace(/([A-Z])/g, " $1").trim();
     //img.src ="https://raw.githubusercontent.com/AnthonyPerniah/" +result.name +"/master/img_preview/preview.png";
     // body.innerHTML = result.description;
-  };
+ // };
 }
 
 function set_data(elements_div_projects, elements_div_blog) {
+  var data1 = 1;
   for (var e = 0; e < elements_div_projects.length; e++) {
     get_data_projects(elements_div_projects[e]);
   }
   console.log('antes')
   fetch('../data/data.json')
   .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(err => console.log(error));
-  //for (var e = 0; e < elements_div_blog.length; e++) {
-  //  get_data_blog(elements_div_blog[e]);
-  // }
+  .then(data => {
+    for(var e =0; e < elements_div_blog.length; e++){
+      if(e<=data['blog'].length){
+        set_data_blog(elements_div_blog[e], data['blog'][e])
+      }
+    }
+  });
+
 }
 
 document.addEventListener(
