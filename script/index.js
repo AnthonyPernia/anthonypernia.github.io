@@ -2,7 +2,7 @@
 var elements_div_projects = document.getElementsByClassName("card_container");
 var elements_div_blog = document.getElementsByClassName("card_blog");
 var blog_data =
-  "https://drive.google.com/file/d/1p0RHQiNlQgbNle2mtqKC_ibtQSQb-rlJ/view";
+  "https://raw.githubusercontent.com/anthonyperniah/anthonyperniah.github.io/master/data/data.json";
 function get_data_projects(element) {
   var title = element.getElementsByTagName("h4").item(0);
   var description = element.getElementsByTagName("p").item(0);
@@ -49,9 +49,9 @@ function set_data(elements_div_projects, elements_div_blog) {
   for (var e = 0; e < elements_div_projects.length; e++) {
     get_data_projects(elements_div_projects[e]);
   }
-  for (var e = 0; e < elements_div_blog.length; e++) {
-    get_data_blog(elements_div_blog[e]);
-  }
+  //for (var e = 0; e < elements_div_blog.length; e++) {
+  //  get_data_blog(elements_div_blog[e]);
+ // }
 }
 
 document.addEventListener(
