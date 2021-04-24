@@ -167,6 +167,36 @@ MAIN
           align-items: center;
 }
 
+#about_section .about_div .projects_div_tittle_primary {
+  text-align: center;
+}
+
+#about_section div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about_section div .card_about {
+  background-color: #26262c;
+}
+
+#about_section div .card_about h5 {
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: calc(0.5em + 0.5vw);
+}
+
+#about_section div .card_about p {
+  color: white;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: calc(0.5em + 0.4vw);
+}
+
 #projects_section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1c1c21), to(#26262c));
   background-image: linear-gradient(180deg, #1c1c21, #26262c);
@@ -273,12 +303,13 @@ MAIN
 #blog_section .blog_div h5 {
   font-weight: 300;
   color: white;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.5em + 0.7vw);
 }
 
-#blog_section .blog_div p, #blog_section .blog_div small {
+#blog_section .blog_div p,
+#blog_section .blog_div small {
   font-weight: 100;
-  font-size: calc(0.5em + 0.4vw);
+  font-size: calc(0.4em + 0.5vw);
 }
 
 #blog_section .blog_div .card {
