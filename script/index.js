@@ -35,17 +35,7 @@ function get_data_projects(element) {
 }
 
 function get_data_blogs() {
-  var url = "https://bloganthonyperniah.herokuapp.com/blog/auth/authenticate";
-  var data = new FormData();
-  data.append("username", "anthony");
-  data.append("password", "anthony");
-  var Http = new XMLHttpRequest();
-  Http.open("POST", url, true);
-  Http.onload = function () {
-    // do something to response
-    console.log(this.responseText);
-};
-Http.send(data);
+//TODO
   
 }
 
@@ -55,7 +45,7 @@ function set_data_blog() {
 }
 
 function set_data(elements_div_projects, elements_div_blog) {
-  var data1 = 1;
+  
   for (var e = 0; e < elements_div_projects.length; e++) {
     get_data_projects(elements_div_projects[e]);
   }
